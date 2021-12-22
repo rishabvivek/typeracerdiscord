@@ -4,11 +4,17 @@ import os
 import json
 from discord.ext.commands.core import check 
 import requests
+from dotenv import load_dotenv
+
+
 
 from urllib.request import urlopen
 from discord.ext import commands
 
 
+load_dotenv()
+
+TOKEN = os.getenv('DISCORD_TOKEN')
 client = commands.Bot(command_prefix = '!')
 
 
@@ -23,4 +29,4 @@ async def tester(ctx):
 
 
 
-client.run("OTIwNTY2MTEwNDY4ODU3ODY2.YbmOAA.sCrzlNwbB4RZpN_mvkdKAACI8YY")
+client.run(TOKEN)
