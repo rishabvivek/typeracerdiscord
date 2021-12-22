@@ -6,7 +6,7 @@ from discord.ext.commands.core import check
 import requests
 from dotenv import load_dotenv
 
-
+#boi
 
 from urllib.request import urlopen
 from discord.ext import commands
